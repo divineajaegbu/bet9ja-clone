@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bet9ja website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <!--first form-->
+    <form class="first-form">
+        <input type="text " placeholder="Username">
+        <input type="password " placeholder="Password">
+        <input type="button " value="Log in" id="button">
+        <footer>
+            <p class="forgotten-password"><small>Forgotten Password?</small></p>
+            <p class="register"><small>Register</small></p>
+        </footer>
+    </form>
+
+    <header>
+        <h1><span class="red-color ">bet</span><span class="font-size ">9</span>Ja</h1>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISEhgRFRUYGBgZHBEZEhoYGBgSGBgVHRkZGhocGBgcIS4lHB4rIRgZJjgmKy8xNTU2HiQ7QDszPy40NTEBDAwMBgYGEAYGEDEdFh0xMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIAOcA2gMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAwIEAQYHBQj/xABDEAACAQIDBQQHBQcDAgcAAAABAgADEQQSIQUxQVFhBgdxgRMUIjJCkaFSYnKCsSOSorLB0fAVM8Jz4TRDVJOz0vH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7NCEIBCEIBCEIBCV8RXSmLsbcBvJJ5ADUnoJSqYuo+ijIOZsznwHur55vAQPSdwouSAOZ0lN9qU/hJfqgZx81BlP1dSczXc83Oc36X0XytHAQMnaDHcjfID+Yj9Is4tuOcflY/yAiNCyQWAlKqvoGBI3i9yPEbxPC2r2x2dhiVfEKzDQpTBrMDybICFP4iJ6XaLZwxOErUbAs9OoqXF7OVOX62nzdUGvTS3hA61iO9jCqbJh6zdWKUwfkzGJp98FPjhagH3aqt9ConKMkxlgduwPe3gX0cVqfV6YdfnTZj9JteyO1WDxelGulRrXyqwD26o1mHynzLlmLEEHiCCCNCDwIPAwPrVKgbcf7/KMnz12e7xsZhbJVPrFMW0c2qKPu1N5/NfxE672a7XYbHJmovdlA9JTf2aieI4j7wuOsDaIRVOqrbt/LjGwCEIQCEIQCEIQCEIQCEIQCeVU2qrM1KkQzoctRt6I1gcrW3vYg5RuBFyLi+k9pO2FTGYr/SdmvZjf1rErqKVMaP6Mj4tbZuZAGpuNo2Zs+nh6SUKa2RBYcSTvLMeLEkkniSYFhKeuYksx0LNqbchwA6CwjQIKIwCBgLJBZkCTAgRCyQWSCyYWBACfOfa/Z3q+Or0uCu+XhZG/aIP3XWfRlSoq7zv3AXJPgBqfKaJ2v7CVdoYj1lHWldEUo4LFmXN7RKkgaFRbXdA4rlhlm+4ruw2igJUUqnIJUsT++qj6zXdo9mcZh9auGqoBqWyF0Hi6XUfOB4RSYKSzk4yBSBWKyeFxFSlUWojsjobo6nKynof8vJssgywO1dg+3AxtsNXsmJAupHspWUb2QfC43lfMaXC79SxPBvn/AHny3hmdCHVijIQ1NwbFHBuCD0M752M282OwiVaiZKhzBhYqr5dM9O+9Dv03G44XIblMyhRrFeo/zdLqsCLiBKEIQCEIQCEIQCce71u35Uts3Bt7eq4mompU7jSQj4uDEbt2+9uo7Tf2CgZlLAi6EBlB4gkGx5TW8FsDCYVCKFFELWVntnqHMwUlna7H3id8Dze7rsv6hhAWH7erlatzUW9lPyg69Sek29RMARiiBlRJqJhRGKIGQJMCCiTAgYAiDVZjlThcM51UEbwB8TcOQ1ubixxrV3EhOY0LfhPBevHhzNtECgAAACwAGgA4ACAqjhwuupJ3sdSfE8ugsOkflkoQMWhaZhA17bfZDA4u5qUVDn/zE/ZvfmWX3vBgROa9ou7LE0Lvhj6dBc5bBaqj8O5/y2PJZ2uYtA+V6lMqSpBBBIYEEEEbwQdQeknh8I9R1RVZ2Y2VEBZmPQD/AAT6B7Tdj8LjxmdclS1lqpYPpuDaWZeh8iJjsp2cw2CpEU0/aH2azt7VRmG8ZuC3GgFhx43gaj2V7tVTLWxwV23pQHtU0/6h+Nvu+7+KdDeipXKVFhawta1t1uVuFt0skRbCBRYMnN1+br/9x/F+K8sYevaxBup101HiJJhKtSmVJdBv1dd2bqOTfQ8eYD2Ab6yU87B4gG2t1O7hY8QQd2uluBnowCEIQCLq1AoLHhGTzNo1bkIOGp8f8/WBWZixLHeYuuNB+On/ADqZNRMYgezfk1MnwDqSfkDAsKI1RNX2723wGCJR6meoL3p0h6RgeTG+VT0YiaRtDvbxDEjD4ZEHBqrNVa34VygHzMDsSiMUT5/q94W1nNxiQnRKVK38Sk/WRTtztf8A9a3/ALdA/wDCB9CgSuf2pK/ACQ33yN6/hHHnu5zh+G7xtp0yprVlqU8yelvSRGyFhmysgWxtexne6QUKAtsthltutwt0gTAmYQgEIQgEIQgEIQgEpP7FQHg+h/GBp81H8I5y7K2Mpk0zbVhZl6sNQPO1vOAxhFsJOk4dQw1BAImGEBLCLYR7CKYQKdZchLjcf9wf8x1HHmOoAPp4WrmHUfUcDKjCIwr+jfL8JuU6D4l8t46afDA9qEIQIVHCgseAJnhliSSd51M9HaT2QLzP0H+CeasBqzUO8/bvqmBNNWtUxBNNLGxCW/aMPykL4uJt6zhPejtf1naL0wbpQApJY3Gca1D0OY5fyiBqSCPQRSRyQGoI9RFJHLAzVp5kZeYM+hewW0vWtm4asTc+jVHJ3l0vTcnxKkzgKzqvcnjb4bEYUm5o1syjlTqLdR+8jnzgdMhCEAhCEAhCEAhCEAhCECngdAyfYZgOinVR+6RHsImlpWdeYpv5m6/8BLDQEsIthHNFNAU0rYmmWXT3hqn4huv0O49CZaaKaBa2fWDoD+u8dD1G7ylua7htqUqOLTCM1nrio9EW0OUZnF+ehb83SbFA8naLXe3ID57/AO0rLJ4lrux6n6aSCwF7Qxi0KNSu3u01d28FUtb6T5ieq1RmdjdmLM5O8sxuT8yZ3XvSxvotl1ADY1GpU163bMw81RpwdID0j0iEj0gPSOSISPSA9JuHdRjfRbVakTYYiiwA51KZzD5IHmnrLey8d6tjMLibgCnWTOTuFNzlf+EmB9LQhCAQhCAQhCAQhCAQhOddse8mnh2OGwYWvXFw7XvSpH7xHvsPsg2HE3FoG9L/AL7fgp/zVJYafOFLb20KdY4kYyr6ZrZyTdGA3Kafu5RrYW04WnRuy/ejSqEUccq0H3Cqv+wx+9fWmfG46jdA6K0U0ZmBFwbg6gjUEcwYtoC2imjWimgc57ycd6rjtmYq9glWt6Q/czUQw81Lzrc4h35v7OEXrij8hSH9Z1jYG0xWwmHrG13o0HOvFkVj+sCsxuSfGZWQEHqBeZJ90DUnw/udIHN++3FWpYaj9p6rn8iqo/nM5Kk653t7Cr1qSYxbMtEOKiKCSqMQc9/iAtroLDXcCZyJDAsJHoZXQxyGBYQxyGV1MehgWUMXjrMmSxLNZUVRmZmuLBQNTraRLm6oql3YgIigszEmwCganWdl7vOwIwlsZigHxTD2V0KYdT8KcC/Nhu3DiWDb9j4mp6tROIVkqejpelBFwHyDPdluBrfeZ6KOGFwQRzBuJOJegp1I15i4b5jWA6Er5HHutfowv8iLW87w9MR7ykdV9sfTX5iBYhF06isLgg+BvGQCIxFdKaNUdgqKCXZiFCqBclidAAIYiulJGqOwVEBZ2YhVVQLkkncAJwvtp2ufarmlTLJgkbQaq2IYH3m4hAdy+Z190LvbLt9Vx2bD4NmpYbUPV1SpWHELfVFPzPG2qzTkpqi5VFh/m+O0AsBYDcBoAIpzAg5ld9Y1zEsYG0di+3FXZzClULVMKTqnvPS+9Tvw5pu5WO/uGFxdOtTWrTcOjgMjKbggz5gcza+7/ti2z6voqhJwzt7Y3+iY6Z1HL7Q5a7xqHdmiKrhQWO4efgAOJ4WmGxSH3DnPAJZ/mdw8yJAISc72uPdUaqvW/FuvkONw1Xt52eOOwNT2f2yftKPEgoD7AtvzKWH4iOAE0jZPawU8PSp5vdp0l38lA/pOxMZzHH91NGpVqVBXyB3dgoAsoZiQo04XtA3vB7Rp1aXpU11dCvEVFYoyeOYEfXdLNGnb2jqx94/0HQf95pXY6i9Pae06LH2Ermoi8A1VnIYdclhN5gTGuh85xvvE7BHDFsZhVvRN2qoupo82UfY/l8N3Y1MaIHyuhjkM6r217tA5bE4EBX1L0NFVjzpncp+7uPC248qZWRijqyupsysCrKeIKnUGA9DHUVd3WlTUvUchURRdmYxWDw9StVShRUvUc5UVdST15AbyToACZ3nsF2Ip7OX0r2fEsP2j7wgPwU77l5neeg0gQ7vuwaYADE17PimGrb1oqRqlPrbQt5DS999iVMYpgShCEAhCEBNSipNyNeY0PkRrI5HX3Wv0b+jDd5gyxCBxTvT27XxGKOzSDTo0hTesATeuzKGXXii3GnMEnUC2o6AWGgGgA0AE3Lvjwfo8fhsSN1Wm9JuWZGzAnqc4H5ZpDNAyzRbNBmimaBFzFOZJ2iXaBFzK9Y+yfAxrmW+z+E9PjcPRtfPVohvw5gW/hDGB9I4Gj6OjTp/YSmn7qgf0k2k3MUxgRaR9GYMZ6lGj7I8B+kDXDsoUsdicQB/4gYVieqKyW+gPnLc9LaaaBuWh8/8A8+s82BlTGqYkSamA5TPB7UdjMLtIe2Mla1krIBmHIOPjXofIie6pjqB9oeIgaz2F7I0NnUg6+3WqKpqVSLGxsciD4V3eJ38ANtUynhNKajkqg+IFj+ksqYD1MmDEAxgMBwMlEhpINAZCRDTN4GYTF4Xgc/758Dn2aK434erRqdcpPoyPm6nynHC8+j+0ez/WsHXw3GpTqqt9bMVOU26NYz5jwlS6KelvlpAtM0WzSLNFs0DLNFM0GaKZoGGabv3Q7O9LtA1yPZoI7X++90Ufulz5TRWad07qtkerbPWows+IPpW5hLWpjwy+1+cwNzYyDGZYyDGBgLcgcyB857lp5OAXM4PK5/oP1nrwFV6eZSvMaePCeGRNhnkY+llbMNza+fGBVmQZiZgMUyatbWJUyYMBlPQuvJ3/AImzj6OI4GVybP8AiVT4svsN9MnzjQYDgZMGJBmQ0B4aTDRAaSDQGhpnNFBpnNAbmhmi80M0CeafNHanBerbRxWH4LVdkG6yP7ajyVhPpPNOId9GD9HjqeJ3LVpZWNvjRiNfysnygaMWi2aI9OvOYNZeYgMZotmkqFJ6jZaaO7ckVnPyAmwbN7A7TxFiMOaan4qxFIDxU+1/DApdk9jHHYynhtchOasR8NJdX14X90dWE+j1UKAoFgAAANAANABNP7Bdkf8ATA+dletUCksoIUIu9VvrvIJOl7jTSbexgDGLYzLGFJC7BRx/TjA9HZtOy5vtfoN39ZdkVUAWG4bpKAROIpZ1K/LxjoQNeYWNj5wnobQw/wAY/N/eefAzMgyMzAm59jN9g5j+A+y9zyGjfljAYqm9je1+Y5jiIpKqI/oM4zhc6AsM7Ur2D2vc290nmDzEC4DJhokNJBoDg0yGig0yGgNvJZorNDNAbmhmi80i9QKLk6fPoAAN5vpbjAnUqZRfU7gAN5J3AdZBEsDmsWPvHeOii/wi58SSeMiikHO3va5V35FP6seJ4bhxJkWgV6uzsO/vUaTfipo36iKXZWFXVcPRHhSQfoJbLSJaBlAFFlAA5AAD6SJMwWkS0BWKNlz/AGDm8h738JPnaTYzBMRhj7AH2br45SVv9IDSZ6ez6GUZjvO7w/7/ANpUweHztr7o39ek9mAQhCASLG0Ga0q1XgTqV542JdUPEKePAdDy8Tp1lmrUlOrUgTEzKlIi9lOQ8t6H8vA+FrzyO2O2MTg8G9elSDOLDMDmWmp0zspFzY201GoubAwK/bbtlS2cmVbPiGH7NOCj7dS25em9umpHD8RtnEPiPW2qt6a+YOCVYHhltuAGlhpbSVcXiqlZ2q1GLOxJZibknrEQOs9lu9UWFLHLyArIv/yIP1X93jOn4HH0q6CpSdHQ7mRgw8NNx6T5Xl3Zu1K+Ff0lCq9NtLlGK36MNzDoYH1KGgGnE9l97OLpgLXpU6wFvaF6LnxKgr8lE2nBd7GAewqJWpnicquo81a/8MDouaGaalh+8PZT6DEhT95KqfUpb6zZMPX9Ki1EIyOFZHb3WUi4Kr7zcOQ6wHvVAtzOigaljyA4mZVSDdve+EDUJw38W68Nw4kwSy3tck6MzbyOQtoq7tBy1uYZoDM0xmkM0xmgTLTBaQLSJaBItIkwmIGGNtToOJOgAmgbN7T4zaWKbB4BFSkruauJZfSZaZY+0qn2Qx1yqbk9ADb2O1XrGLP+mYY5S4HrlUglKOHb4Tzd+C77XvYHMNs7MbEw+z6C4egtgNXY6s78Wc8WPyAsBoIHq4TDimioCTlAF2N2J4ljxJliEIBCEICaplOqZeqCUqqQKFUylVM9CqkpVUgedVMbTxyspp1QGVgVa4zAqRYhxxBGkxVSUqqQOSdveyh2fWzoC2HqEmi3vZTvKM3McDxHUG2pTvmLpCpTehUUPTcWdG3dCp+FgdQRxnJ9u9k6+HZmRTUp3OVl1YL95Rx6jTw3QNbhCEAhCEAnbe6HbPpcG2GY3eg3s/8ASa7L8mDjoMs4lNq7udr+qbQpkmyVP2VTwYjKelnCm/K8D6CvC8JiAXheEwTbWBKYivWFPu3f8IuP3vd+sXUqNxIToPbf66D5HxgPdwouTbl1PIDiegiS7NoPZHM2LeQ3Dzv4RKb7gW5kksxHIseHTdLVJIDsHRWmLKLXJZubMd7MeJ6z0aRlSkkvUkgWV3SUwBMwCEIQCKeneNhA86rRlOrRntlQYp8ODA16pQlOph5sdTC9JVfCwNdqYaVXw02R8LKz4WBo21eyuGxFy9MBj8aew9+ZI0bzBmpY/u8qC5o1VYcFcFDb8QuCfITsD4TpFNg+kDgWM7NY2l71ByOaD0g8bpe3nKFHBVXYqtN2YbwqsxHiAJ9EHB9JgYUjcSPA2gcV2d2F2lXtlwzID8VW1EDrZ7E+QM3TYvdMos2Kr5t10o6DwLsL28FHjN6VKg+Nv3jJj0n22+cC8KTD4388h+uW5mfRt9s+QX+olHJUPxt8yIerMd5J8STAtOVHvVGPS6qf4ADEtVp7whc8C1z9WuYJhOkemFgV2rVG42HT+8lToS8mFllMLAp06Et0qMt08LLKUQIFelRltVtMzMAhCEAhCEAhCEAhCEAkCoPCEIEGw6mKODEIQFnA+EU2ChCBBsFIHBwhAPU5kYOEIElwUauChCA0YLwjBhRMwgTWio4SYAEIQJQhCAQhCAQhCAQhCB//2Q=="
+            width=" 15px">
+    </header>
+
+    <div class="flex">
+        <a href="# ">SPORTS</a>
+        <a href="# ">LIVE</a>
+        <a href="# ">DESKTOP<span class="newtext ">NEW</span></a>
+        <a href="# ">CASINO</a>
+        <a href="# ">BET9JAPLAY</a>
+        <a href="# ">VIRTUAL</a>
+        <a href="# ">SUPER9JA<span class="freetext">FREE</span></a>
+        <a href="# ">FIRE BETS<span class="newtext2 ">NEW</span></a>
+        <a href="# ">MOBILE</a>
+        <a href="# ">PROMOTIONS</a>
+    </div>
+
+    <div class="paragraphy ">
+        <a href="# ">Home</a>
+        <a href="# ">FAQ</a>
+        <a href="# ">How to Deposit/Withdraw</a>
+        <a href="# ">Tutorial</a>
+        <a href="# ">Results</a>
+        <a href="# ">Statics</a>
+        <a href="# ">Livescore</a>
+        <a href="# ">Contact Us</a>
+        <a href="# ">GMT+01:00</a>
+    </div>
+
+    <!--To join section second-stage-->
+
+    <div class="right-float ">
+        <img src="https://c8.alamy.com/comp/HK2B55/letter-z-on-a-bright-red-balls-with-reflections-isolated-on-white-HK2B55.jpg " width="70px " alt="z in a circle logos ">
+        <h1>bet9Ja</h1>
+        <img src="data:image/jpeg;base64,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"
+            width=" 13px ">
+        <h2><span class="size ">ZOOM</span><br/><small>VIRTUAL<br/>SOCCER</small></h2>
+        <h3>24/7 PLAY</h3>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <a href="# ">JOIN NOW</a>
+    </div>
+
+    <!--second stage-->
+    <main class="total-record ">
+
+        <div class="shift-right ">
+            <section>
+                <div class="second-stage ">
+                    <ion-icon name="person-circle-outline "></ion-icon>
+                    <a href="# ">REGISTER NOW!</a>
+                    <ion-icon name="arrow-forward-outline "></ion-icon>
+                </div>
+                <!--Betslip-->
+                <form class="second-form ">
+                    <p><small>Betslip</small></p>
+                    <div class="white-color ">
+                        <p><small>Insert Booking Number</small></p>
+                        <ion-icon name="pencil-outline "></ion-icon>
+                        <input type="text " name="text ">
+                        <input type="submit " value="LOAD ">
+                        <p><small>Click on the odds to add to your<br/>betslip</small></p>
+                    </div>
+                </form>
+
+                <!--fast sport-->
+                <div class="fast-sport ">
+                    <p><small>Fast Sport</small></p>
+                    <ion-icon name="pencil-outline "></ion-icon>
+                    <div class="contain ">
+                        <input type="text ">
+                        <input type="text ">
+                        <ion-icon name="caret-back-outline "></ion-icon>
+                    </div>
+                </div>
+                <!--coupon check-->
+                <div class="coupoon-check ">
+                    <p><small>Coupon Check</small></p>
+                    <div class="reflection ">
+                        <p><small>Insert the coupon code you wish to <br/>check</small></p>
+                        <input type="text ">
+                        <ion-icon name="caret-back-outline "></ion-icon>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <div class="link ">
+                    <a href="# " style="color: blue; ">Follow @Bet9jaOfficial</a>
+                </div>
+                <br/>
+                <br/>
+                <!--ANIMATION-->
+                <div class="Animation ">
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/product/H/HO/HOMKABIR-ART-PEKABI26415565453EBA/1593605807935_2.jpeg " width="80px ">
+                        <h1><span>LIVE BETTING</span><br/> ANYTIME.
+                            <br/> ANYWHERE
+                        </h1>
+                        <h2>PLAY NOW!</h2>
+                    </div>
+                    <div>
+                        <img src="https://static2.bigstockphoto.com/9/3/3/large1500/339435061.jpg " width="100px ">
+                        <h1><span>CASINO</span><br/> BECOME A<br/> HIGH ROLLER
+                        </h1>
+
+                        <h2>PLAY NOW!</h2>
+                    </div>
+
+                    <div>
+                        <h3>9ja</h3>
+                        <h1><span>SUPER9JA</span><br/> N100, 000, 000<br/> JACKPOT
+                        </h1>
+                        <h2>PLAY NOW!</h2>
+                    </div>
+            </section>
+
+            <div class="ion-icon ">
+                <ion-icon name="cube-outline "></ion-icon>
+                <ion-icon name="headset-outline "></ion-icon>
+                <ion-icon name="logo-twitter "></ion-icon>
+                <h6>CONTACT US!</h6>
+            </div>
+
+            <div class="row ">
+                <ul>
+                    <li>L</li>
+                    <li>U</li>
+                    <li>C</li>
+                    <li>K</li>
+                    <li>Y</li>
+                    &nbsp; &nbsp;
+                    <li>P</li>
+                    <li>I</li>
+                    <li>C</li>
+                    <li>K</li>
+                </ul>
+                <br/>
+                <form>
+                    <label class="win ">To win</label><br/>
+                    <input type="text "><br/>
+                    <div>
+                        <label for="stake ">Your stake</label><br/>
+                        <input type="text ">
+                    </div>
+                    <h4>GENERATE BET</h4>
+                </form>
+            </div>
+            </div>
+
+            <div class="container-images ">
+                <img src="https://cnt.bet9ja.com/img/promos/sportsbook/opt-in-promotion/BiggestWelcomeOffer_1724x655px.jpg" alt="" width="300px">
+                <img src="https://web.bet9ja.com/ImgNews.ashx?Tipo=1&Tema=Bet9ja&ID=100318& " alt=" ">
+                <img src="https://web.bet9ja.com/ImgNews.ashx?Tipo=1&Tema=Bet9ja&ID=100320& " alt=" ">
+            </div>
+
+
+            <div class="grid-container ">
+                <div class="item_1 ">
+                    <h3>TOP BETS</h3>
+                    <p><img src="data:image/jpeg;base64,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"
+                            width=" 12px ">SOCCER</p>
+                    <p><img src="https://c8.alamy.com/comp/HK2B55/letter-z-on-a-bright-red-balls-with-reflections-isolated-on-white-HK2B55.jpg " width="12px " alt="z in a circle logos ">SOCCER ZOOM</p>
+                </div>
+
+                <div class="item_2 ">
+                    <p><small>International</small><br/>World Qu</p>
+                    <p><small>International</small><br/>World Qu</p>
+                    <p><small>International Clubes</small><br/>UEFA Champi....</p>
+                    <p><small>International Clubs</small><br/>UEFA Europa....</p>
+                    <p><small>England</small><br/>Premier League</p>
+                    <p class="line-height "><small>Italy</small><br/>Serie A</p>
+                    <p class="line-height "><small>Span</small><br/>LaLiga</p>
+                    <p class="line-height "><small>Germany</small><br/>Bundesliga</p>
+                    <p class="line-height "><small>France</small><br/>Ligue 1</p>
+                    <p class="line-height "><small>Portugal</small><br/>Premier Legaue</p>
+                    <p class="line-height "><small>Nertherland</small><br/>Eredivisble</p>
+                </div>
+            </div>
+
+            <figure>
+
+                <div class="march ">
+                    <p><small>March</small></p>
+                    <p class="first "><small>1x2</small></p>
+                    <p class="second "><small>Double Chance</small></p>
+                    <p class="third "><small>O/U 2.5</small></p>
+                </div>
+
+                <div class="multiplication ">
+                    <p>1 x 2</p>
+                    <p>1x </p>
+                    <p>12</p>
+                    <p>x2</p>
+                    <p>Over</p>
+                    <p>Under</p>
+                </div>
+
+                <div class="month ">
+                    <p>Tuesday, 23 November</p>
+                </div>
+
+                <div class="manchester ">
+
+                    <div>
+                        <p>Villarreal-Manchester Utd<br/><span>18:45</span></p>
+                    </div>
+
+                    <div class="div2 ">
+                        <p>Dynamo Kiev-Bayern Munich<br/><span>18:45</span></p>
+                    </div>
+
+                    <div class="div3 ">
+                        <p>Barcelona-Benifica<br/><span>21:00</span></p>
+                    </div>
+
+                    <div class="div4 ">
+                        <p>Young Boys Bern-Atalanta<br/><span>21:00</span></p>
+                    </div>
+
+                    <div class="div5 ">
+                        <p>Sevilla-Wolfsburg<br/><span>21:00</span></p>
+                    </div>
+
+                    <div class="div6 ">
+                        <p>Lille-Salzburg<br/><span>21:00</span></p>
+                    </div>
+
+                    <div class="div6 ">
+                        <p>Lille-Salzburg<br/><span>21:00</span></p>
+                    </div>
+
+
+                    <div class="div7 ">
+                        <p>Chelsea-Juventus<br/><span>21:00</span></p>
+                    </div>
+
+
+                    <div class="div8 ">
+                        <p>Malmo FF-Zenit St.Petersburg<br/><span>21:00</span></p>
+                    </div>
+                </div>
+
+
+
+
+                <footer>
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>2.05</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.10</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.10</p>
+
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.45</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>3.10</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.30</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+                </footer>
+
+                <div class="day ">
+                    <div>
+                        <p>Wenesday, 24 November</p>
+                    </div>
+
+                    <div>
+                        <p>Besiktas-Ajax<br/><span>18:45</span></p>
+                    </div>
+
+                    <div>
+                        <p>Inter-Shakhtar Donestsk<br/><span>18:45</span></p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.30</p>
+                    </div>
+                </div>
+            </figure>
+
+            <figcaption>
+                <div>
+                    <h4>UPCOMING EVENTS</h4>
+
+                    <div class="left-side ">
+                        <p><img src="https://static5.depositphotos.com/1034598/437/i/450/depositphotos_4370265-stock-photo-soccerball.jpg " width="12px ">Soccer</p>
+                        <p><img src="https://media.gettyimages.com/photos/basketball-picture-id170096587?s=612x612 " width="12px ">Basket</p>
+                        <p><img src="https://media.istockphoto.com/photos/tennis-ball-picture-id137345149?s=612x612 " width="12px ">Tennis</p>
+                        <p><img src="https://static5.depositphotos.com/1034598/437/i/450/depositphotos_4370265-stock-photo-soccerball.jpg " width="12px ">Soccer Zoom</p>
+                    </div>
+
+                </div>
+            </figcaption>
+
+
+            <aside>
+
+                <div>
+                    <h5>Match</h5>
+
+                    <div class="shift-right-side ">
+                        <h5>1x2</h5>
+                        <h5>Dc</h5>
+                        <h5>O/U 2.5 FT</h5>
+                    </div>
+                </div>
+
+                <div class="area-multiplication ">
+                    <p>1</p>
+                    <p>x</p>
+                    <p>2</p>
+                    <p>12</p>
+                    <p>x2</p>
+                    <p>Over</p>
+                    <p>Under</p>
+                </div>
+
+                <article>
+                    <div id="club ">
+                        <p>Washington Spirit-North Carolina<br/><span>07/11/2021 10:30 <ion-icon name="stats-chart-outline "></ion-icon></span></span>
+                        </p>
+                    </div>
+
+                    <div id="club2 ">
+                        <p>Alashkert-Urartu<br/><span>08/11/2021 11:00 <ion-icon name="stats-chart-outline "></ion-icon></span>
+                        </p>
+                    </div>
+
+                    <div id="club3 ">
+                        <p>Radnicki 1923-FK Mladost Lucani<br/><span>08/11/2021 13:00 <ion-icon name="stats-chart-outline "></ion-icon></span>
+                        </p>
+                    </div>
+
+                    <div id="club4 ">
+                        <p>Podillya Khmelnytskyi-Volyn Lutsk<br/><span>08/11/2021 13:15 <ion-icon name="stats-chart-outline "></ion-icon></span></p>
+                    </div>
+
+                    <div id="club5 ">
+                        <p>Ludogorets Razgrad ||-Fk Hebar<br/><span>08/11/2021 13:30 <ion-icon name="stats-chart-outline "></ion-icon></span></p>
+                    </div>
+
+                    <div id="club6 ">
+                        <p>AL Sareeh-Mansheyat Bani Hasan FC<br/><span>08/11/2021 13:30 <ion-icon name="stats-chart-outline "></ion-icon></span></p>
+                    </div>
+
+                    <div id="club7 ">
+                        <p>AI-Yarmouk-AI-Ahly Amman<br/><span>08/11/2021 13:30  <ion-icon name="stats-chart-outline "></ion-icon></span></p>
+                    </div>
+
+                    <div id="club8 ">
+                        <p>Egnatia Rrogozhine-VIIaznia Shkoder<br/><span>08/11/2021 13:30
+                            <ion-icon name="stats-chart-outline "></ion-icon></span>
+                        </p>
+                    </div>
+
+                    <div id="club9 ">
+                        <p>Atletico Fenix Montevideo-Sud<br/><span>08/11/2021 13:30  <ion-icon name="stats-chart-outline "></ion-icon></span></span>
+                        </p>
+                    </div>
+
+                    <div id="club10 ">
+                        <p>Barnsley U23-HuII City U23<br/><span>08/11/2021 14:00  <ion-icon name="stats-chart-outline "></ion-icon></span></span>
+                        </p>
+                    </div>
+
+                </article>
+
+
+
+
+                <footer>
+                    <div class="owner ">
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>2.05</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.10</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.10</p>
+
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.45</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>3.10</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.30</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+
+                    <div>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.90</p>
+                        <p>1.00</p>
+                        <p>1.45</p>
+                        <p>2.90</p>
+                        <p>1.00</p>
+                    </div>
+                </footer>
+
+                <div class="view ">
+                    <h4>VIEW ALL OF TODAY'S MATCHES
+                        <ion-icon name="caret-forward-outline "></ion-icon>
+                    </h4>
+                </div>
+            </aside>
+    </main>
+
+    <!--left hand side-->
+    <div id="list-groups ">
+        <div class="input-icon ">
+            <input type="text " placeholder="Search ">
+            <ion-icon name="search "></ion-icon>
+        </div>
+
+        <div class="Betting-clock ">
+            <p>
+                <ion-icon name="timer-outline "></ion-icon> Live Betting</p>
+        </div>
+
+        <div class="odds ">
+            <h4>
+                <ion-icon name="search "></ion-icon> Odds Less Than</h4>
+        </div>
+
+        <div class="Hours ">
+            <p><small>Today</small></p>
+            <p><small>1<br/>hr</small></p>
+            <p><small>3<br/>hr</small></p>
+            <p><small>24<br/>hr</small></p>
+            <p><small>72<br/>hr</small></p>
+            <p><small>ALL</small></p>
+        </div>
+
+        <div class="images-addition ">
+            <div class="not-follow ">
+                <p><img src="data:image/jpeg;base64,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"
+                        width=" 18px ">&nbsp;&nbsp;Soccer</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://media.istockphoto.com/photos/new-leather-cricket-ball-against-white-picture-id157181750?k=20&m=157181750&s=612x612&w=0&h=OQFimw32ZfF_ZfZ9dWiz-OIlhTPMIp43F1rOiOHL2Gc=" width=" 18px ">&nbsp;&nbsp;Soccer Zoom</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://cdn.shopify.com/s/files/1/0012/8797/9121/products/CDBK15Ball_20Velocity_20Ball_20Pink_1500x.jpg?v=1534338478 " width="18px ">&nbsp;&nbsp;Soccer Players</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-vector/gold-cup-isolated-on-white-260nw-529661806.jpg " width="18px ">&nbsp;&nbsp;Antepost Soccer</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://media.istockphoto.com/photos/tennis-ball-picture-id137345149?k=20&m=137345149&s=612x612&w=0&h=9BBPqq4_dFkW9V9qTounVg60u5YipnqhOg-ZjapcINg=" width=" 18px ">&nbsp;&nbsp; Tennis</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-photo/basketball-isolated-on-white-background-260nw-124198177.jpg " width="18px ">&nbsp;&nbsp; Basketball</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-illustration/basketball-ball-260nw-78790033.jpg " width="18px ">&nbsp;&nbsp; Basketball spacial</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://images.pexels.com/photos/2570139/pexels-photo-2570139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 " width="18px ">&nbsp;&nbsp; American Football</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-illustration/basketball-ball-260nw-78790033.jpg " width="18px ">&nbsp;&nbsp; Handball</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-illustration/basketball-ball-260nw-78790033.jpg " width="18px ">&nbsp;&nbsp; Rugby</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://media.istockphoto.com/photos/tennis-ball-picture-id137345149?k=20&m=137345149&s=612x612&w=0&h=9BBPqq4_dFkW9V9qTounVg60u5YipnqhOg-ZjapcINg=" width=" 18px ">&nbsp;&nbsp; Volleyball</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://images.unsplash.com/photo-1560692830-0a8209e6f526?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW90b3JzcG9ydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80 " width="18px ">&nbsp;&nbsp; Motor sport</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-photo/basketball-isolated-on-white-background-260nw-124198177.jpg " width="18px ">&nbsp;&nbsp; Ice Hockey</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-photo/basketball-isolated-on-white-background-260nw-124198177.jpg " width="18px ">&nbsp;&nbsp; ESport LOL</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://i.pinimg.com/originals/25/3f/84/253f841f9b7bd8a3d2eda7ace30f239f.jpg " width="18px ">&nbsp;&nbsp;ESports CS:GO</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://i.pinimg.com/originals/9e/81/9a/9e819a089be8d381f1238047b27c4895.jpg " width="18px ">&nbsp;&nbsp; ESports Dota 2</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://i.pinimg.com/236x/df/72/d5/df72d51685e99a265ad186bada408e27.jpg " width="18px ">&nbsp;&nbsp; ESports King of...</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd6wpyFqIhaHRLjQhHA1l6kTItDC0S80p55Du2cZV8nbfZXP_l_SaYHVzW3guejwoKbrI&usqp=CAU " width="18px ">&nbsp;&nbsp; ESports Rainbow...</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-photo/basketball-isolated-on-white-background-260nw-124198177.jpg " width="18px ">&nbsp;&nbsp; ESports StartCraft</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://media.istockphoto.com/photos/new-leather-cricket-ball-against-white-picture-id157181750?k=20&m=157181750&s=612x612&w=0&h=OQFimw32ZfF_ZfZ9dWiz-OIlhTPMIp43F1rOiOHL2Gc=" width=" 18px ">&nbsp;&nbsp; Biathlon</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://media.istockphoto.com/photos/new-leather-cricket-ball-against-white-picture-id157181750?k=20&m=157181750&s=612x612&w=0&h=OQFimw32ZfF_ZfZ9dWiz-OIlhTPMIp43F1rOiOHL2Gc=" width=" 18px ">&nbsp;&nbsp; Bandy</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://cdn2.vectorstock.com/i/1000x1000/68/61/logo-for-basketball-vector-25136861.jpg " width="18px ">&nbsp;&nbsp; Boxing</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://thumbs.dreamstime.com/z/soccer-football-balls-online-esports-banner-esports-esports-also-known-as-electronic-sports-e-sports-esports-competition-video-198084134.jpg " width="18px ">&nbsp;&nbsp; Cricket</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://thumbs.dreamstime.com/z/soccer-football-balls-online-esports-banner-esports-esports-also-known-as-electronic-sports-e-sports-esports-competition-video-198084134.jpg " width="18px ">&nbsp;&nbsp; Darts</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://image.shutterstock.com/image-vector/abstract-seamless-gamer-pattern-soccer-260nw-1846247578.jpg " width="18px ">&nbsp;&nbsp; Floorball</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://cdn.w600.comps.canstockphoto.com/sports-gaming-ball-items-seamless-illustration_csp42408529.jpg " width="18px ">&nbsp;&nbsp; Futsal</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://previews.123rf.com/images/mironovkonstantin/mironovkonstantin1904/mironovkonstantin190400219/121889208-sport-games-balls-flat-style-design-vector-illustration-set-isolated-on-white-background-soccer-bask.jpg" width="18px ">&nbsp;&nbsp;
+                    MMA
+                </p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://previews.123rf.com/images/blueringmedia/blueringmedia1606/blueringmedia160600059/57603229-different-types-of-balls-illustration.jpg " width="18px ">&nbsp;&nbsp; waterpolo</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+            <div>
+                <p><img src="https://previews.123rf.com/images/blueringmedia/blueringmedia1509/blueringmedia150900322/44789478-different-kind-of-balls-of-many-sports-illustration.jpg " width="18px ">&nbsp;&nbsp; Table tennis</p>
+                <ion-icon name="add "></ion-icon>
+            </div>
+
+        </div>
+
+
+        <div id="conlusion-left-side ">
+            <div>
+                <img src="https://previews.123rf.com/images/ssuaphoto/ssuaphoto1209/ssuaphoto120900005/15070760-fiery-soccer-ball-on-playing-field-of-stadium.jpg " alt="fire ball " width="130px ">
+            </div>
+
+            <div>
+                <h3>bet9Ja<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Soccer_ball.svg/1200px-Soccer_ball.svg.png " width="10px "></h3>
+            </div>
+
+            <div>
+                <h2><span>LIVE</span><br/> BETTING</h2>
+            </div>
+
+            <div>
+                <h2>IN-PLAY<br/>BETTING</h2>
+            </div>
+
+            <div>
+                <a href="# ">JOIN NOW</a>
+            </div>
+        </div>
+
+
+        <div class="social-liga ">
+            <div>
+                <h1><small><span>bet</span>9Ja<img src="data:image/jpeg;base64,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"
+                        width=" 15px "></h1>
+                    </small>
+            </div>
+
+            <div>
+                <small>
+                <img src="https://thumbs.dreamstime.com/z/blue-rings-circular-frame-card-border-invitation-greeting-concentric-circles-various-tones-119402826.jpg " alt="circle round " width="60px ">
+                <p>SocialLiga</p>
+            </small>
+            </div>
+        </div>
+
+        <footer id="sponsor ">
+            <p>Proud sponsors of the SociaLiga</p>
+        </footer>
+
+        <div class="end-website ">
+            <h4>BET9JA</h4>
+
+            <div>
+                <a href="# ">Home</a>
+
+                <a href="# ">About Us</a>
+
+                <a href="# ">Become an Agent</a>
+
+                <a href="# ">Contact Us</a>
+
+                <a href="# ">Results</a>
+
+                <a href="# ">Web Affiliates</a>
+
+                <a href="# ">Apps</a>
+
+                <a href="# ">Responsible Gaming</a>
+
+                <a href="# ">Terms and conditions</a>
+
+                <a href="# ">Privacy</a>
+            </div>
+        </div>
+
+        <div class="direction ">
+            <ion-icon name="move-outline "></ion-icon>
+        </div>
+
+        <div id="ion-icons ">
+            <ion-icon name="logo-facebook "></ion-icon>
+            <ion-icon name="logo-twitter "></ion-icon>
+            <ion-icon name="camera-outline "></ion-icon>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+</body>
+
+</html>

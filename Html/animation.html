@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>text-animation</title>
+    <style>
+        .animation h1 {
+            color: blue;
+            font-size: 30px;
+        }
+        
+        .animation-loop:nth-child(2) {
+            color: orange;
+            font-size: 20px;
+        }
+        
+        .animation-loop:nth-child(3) {
+            color: green;
+            font-size: 30px;
+        }
+        
+        .animation .animation-loop1 {
+            position: relative;
+            animation: slide 2s infinite;
+            animation-delay: 5s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        @keyframes slide {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation">
+        <span class="animation-loop1">
+            <h1>this is my favorite</h1>
+            <img src="https://media.istockphoto.com/photos/red-apple-with-leaf-isolated-on-white-background-picture-id185262648?k=20&m=185262648&s=612x612&w=0&h=nxfd_QVNvUHjaZLq-p7jnF_TFm1N-vZTSy-wFyScoQg=" width="300px" height="200px">
+        </span>
+
+        <span class="animation-loop">
+            <h2>this is my favorite</h2>
+            <img src="https://media.istockphoto.com/photos/red-apple-with-leaf-isolated-on-white-background-picture-id185262648?k=20&m=185262648&s=612x612&w=0&h=nxfd_QVNvUHjaZLq-p7jnF_TFm1N-vZTSy-wFyScoQg=" width="300px" height="200px">
+        </span>
+
+        <span class="animation-loop">
+            <h3>this is my favorite</h3>
+            <img src="https://media.istockphoto.com/photos/red-apple-with-leaf-isolated-on-white-background-picture-id185262648?k=20&m=185262648&s=612x612&w=0&h=nxfd_QVNvUHjaZLq-p7jnF_TFm1N-vZTSy-wFyScoQg=" width="300px" height="200px">
+        </span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #cf {
+            position: relative;
+            height: auto;
+            width: auto;
+            margin: 0 auto;
+        }
+        
+        #cf img {
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        #cf div {
+            animation-name: cf3FadeInOut;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            animation-direction: alternate;
+        }
+        
+        #cf div:nth-of-type(1) {
+            animation-delay: 4s;
+        }
+        
+        #cf div:nth-of-type(2) {
+            animation-delay: 7s;
+        }
+        
+        #cf div:nth-of-type(3) {}
+        
+        @keyframes cf3FadeInOut {
+            0% {
+                opacity: 1;
+            }
+            17% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>divine</h1>
+    <h2>am coming</h2>
+    <div id="cf">
+        <div>
+            <h1>orange</h1>
+            <p>girl</p>
+        </div>
+
+        <div>
+            <h1>woman</h1>
+            <p>body</p>
+        </div>
+
+        <div>
+            <h1>sticking</h1>
+            <p>allowed</p>
+        </div>
+
+        <div>
+            <h1>filter</h1>
+            <p>not-allowed</p>
+        </div>
+
+        <div>
+            <h1>website</h1>
+            <p>needed</p>
+        </div>
+
+        <div>
+            <h1>position</h1>
+            <p>imediately needed</p>
+        </div>
+        <div>
+            <h2>This is my new image i have ever<br/> see in my life</h2>
+            <img src="https://images.all-free-download.com/images/graphicthumb/orange_oranges_200337.jpg" width="300px" class="row">
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI=" class="enter">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
